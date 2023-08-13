@@ -1,0 +1,37 @@
+#partners{
+    background-color: #F8F8F8;
+}
+.partners{
+    max-width: 1170px;
+    width: 100%;
+    padding: 2em 15px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+        width: 10%;
+    }
+
+    img:nth-child(3),
+    img:nth-child(4),
+    img:nth-child(5){
+        width: 5%;
+        height: 5%;
+        margin: 2%;
+    }
+
+    // img:nth-child(4){
+    //     width: 5%;
+    //     height: 5%;
+    //     margin: 2%;
+    // }
+
+    // img:nth-child(5){
+    //     width: 5%;
+    //     height: 5%;
+    //     margin: 2%;
+    // }
+}

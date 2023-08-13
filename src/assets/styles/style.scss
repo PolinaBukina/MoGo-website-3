@@ -1,0 +1,35 @@
+@import 'header.scss';
+@import 'banner.scss';
+@import 'service.scss';
+@import 'our-work.scss';
+@import 'all-devices.scss';
+@import 'amazing-services.scss';
+@import 'happy-clients.scss';
+@import 'our-stories.scss';
+@import 'map.scss';
+@import 'about.scss';
+@import 'our-team.scss';
+@import 'reviews.scss';
+@import 'reviews2.scss';
+@import 'partners.scss';
+@import 'futures.scss';
+@import 'footer.scss';
+
+
+// Variable overrides first
+$primary: transparent;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@600;700&family=Raleway:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@600;700&family=Raleway:wght@400;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}

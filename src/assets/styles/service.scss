@@ -1,0 +1,116 @@
+.service{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 4em;
+
+    &__photo-accordion{
+        margin-top: 6em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .photo{
+            width: 50%;
+        }
+    }
+
+    &__accordion{
+        width: 50%;
+        // height: 100%;
+    }  
+}
+
+.accordion-item {
+
+    // width: 90%;
+    margin-bottom: 2em;
+    margin-left: 1.5em;
+
+    &:last-child{
+        margin-bottom:0;
+    }
+
+    .accordion-header .accordion-button{
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#2D3033;
+        text-transform: uppercase;
+        padding: 1em;
+
+        img{
+            margin-right: 40px;
+        }
+    }
+
+    .accordion-button{
+        border: 1px solid #C6CBCD;
+    }
+
+    .accordion-button:focus{
+        box-shadow: none;
+        border: 1px solid #C6CBCD;
+    }
+
+    .accordion-body{
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#2D3033;
+        height: 163px;
+        overflow-y: scroll;
+        border: 1px solid #C6CBCD;
+
+        p{
+            width: 90%;
+        }
+    }
+}   
+
+.service__header{
+    .text__italic{
+        font-family: Kaushan Script;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #2D3033;
+    }
+
+    .text__header{
+        font-family: Raleway;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #2D3033;
+        text-transform: uppercase;
+        margin-top: 1em;
+    }
+
+    .text__line{
+        width: 20%;
+        margin: 3.5em auto 3em;
+        border: 2px solid #F38281
+    }
+
+    .text__paragraph{
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #000000;
+    }
+}
+
