@@ -12,6 +12,10 @@
     flex-direction: row;
     justify-content: center;
 
+    @media (max-width: 765px) {
+        flex-wrap: wrap;
+    }
+
     &__block{
         display: flex;
         flex-direction: column;
@@ -21,6 +25,13 @@
         padding: 2em;
         cursor: pointer;
 
+        @media (max-width: 765px) {
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #FFFFFF;
+            padding: 1em;
+        }
+
         p{
             font-family: Raleway;
             font-size: 24px;
@@ -29,6 +40,14 @@
             letter-spacing: 0em;
             text-align: center;
             color: #FFFFFF;
+
+            @media (max-width: 420px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 14px;
+            }
         }
         h2{
             font-family: Raleway;
@@ -38,6 +57,14 @@
             letter-spacing: 0em;
             text-align: center;
             color: #FFFFFF;
+
+            @media (max-width: 420px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 28px;
+            }
         }
     }
 

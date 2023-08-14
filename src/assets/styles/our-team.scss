@@ -4,8 +4,6 @@
     padding: 4em 15px;
     margin: 0 auto;
     box-sizing: border-box;
-    // padding-top: 4em;
-    // padding-bottom: 4em;
 }
 
 .team-photos{
@@ -13,17 +11,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // margin: 2em;
     margin-top: 4em;
-    // grid-template-columns: 30% 30% 30%;
-    // grid-template-rows: 100%;
-    // gap: 50px;
     cursor: pointer;
 
-    // @media (max-width: 700px) {
-    //     grid-template-rows: 25% 25% 25% 25%;
-    //     grid-template-columns: 50% 50%;
-    // }
+    @media (max-width: 740px) {
+        flex-direction: column;
+    }
 
     &__text {
         position: absolute;
@@ -35,22 +28,42 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s ease-in-out;
+
+        @media (max-width: 740px) {
+            top: 76%;
+            text-align: right;
+        }
+
+        @media (max-width: 400px) {
+            top: 74%;
+        }
+
+        @media (max-width: 350px) {
+            top: 68%;
+        }
     }
 
     &__photo {
         width: 370px;
         margin: 20px;
         box-sizing: border-box;
+        
+        @media (max-width: 740px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
     }
 
-    // .color-icon{
-    //     width: 42px;
-    //     margin-bottom: 3em;
-    // }
-
     &__text {
-        
         margin-left: -20px;
+        width: 100%;
+
+        @media (max-width: 740px) {
+            margin-left: 0;
+        }
 
         button{
             margin-bottom: -70px;
@@ -58,6 +71,11 @@
             width: 42px;
             height: 42px;
             background-color: inherit;
+
+            @media (max-width: 740px) {
+                margin-bottom: 0;
+            }
+
             img{
                 width: 42px;
                 height: 42px;
@@ -71,8 +89,6 @@
 
     img{
         width: 100%;
-        // background-size: cover;
-        // aspect-ratio: 1/1;
     }
 
     &__photo {
@@ -92,6 +108,11 @@
         transition: opacity 0.5s ease-in-out;
         margin-top: -20px;
         margin-left: -20px;
+
+        @media (max-width: 740px) {
+            margin: 0;
+            background: inherit;
+        }
     }
     
     &__photo:hover::before {
